@@ -6,11 +6,11 @@ import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.12
 
 // ===== Firebase Config =====
 const firebaseConfig = {
-  apiKey: "AIzaSyC8UcPwnEVLTV-NDb2yu4x_l_td0acsXi4",
+  apiKey: "AIzaSyCh0fWsCCIM8F4iMz7tz1gbDl15vsV6bRg",
   authDomain: "moriomgame-fa3c7.firebaseapp.com",
   databaseURL: "https://moriomgame-fa3c7-default-rtdb.firebaseio.com/",
   projectId: "moriomgame-fa3c7",
-  appId: "AIzaSyCh0fWsCCIM8F4iMz7tz1gbDl15vsV6bRg",
+  appId: "1:613189870143:web:de74d7ea5b46e635684e8a",
   measurementId: "G-H1CNT2YKDH"
 };
 
@@ -73,4 +73,5 @@ if (window.location.pathname.includes('finish.html')) {
     }
   };
 }
+
 
