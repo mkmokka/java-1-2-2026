@@ -74,4 +74,6 @@ if (window.location.pathname.includes('finish.html')) {
   };
 }
 
+window.registerWithEmail = registerWithEmail;
+window.loginWithPassword = loginWithPassword;
 
