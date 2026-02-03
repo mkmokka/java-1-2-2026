@@ -6,7 +6,7 @@ import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.12
 
 // ===== Firebase Config =====
 const firebaseConfig = {
-  apiKey: "AIzaSyDDQghGiM57A47lU3vCVQWe4U82rh25GKY",
+  apiKey: "AIzaSyCh0fWsCCIM8F4iMz7tz1gbDl15vsV6bRg",
   authDomain: "moriomgame-fa3c7.firebaseapp.com",
   databaseURL: "https://moriomgame-fa3c7-default-rtdb.firebaseio.com",
   projectId: "moriomgame-fa3c7",
@@ -78,5 +78,6 @@ if (window.location.pathname.includes('finish.html')) {
 
 window.registerWithEmail = registerWithEmail;
 window.loginWithPassword = loginWithPassword;
+
 
 
