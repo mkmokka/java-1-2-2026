@@ -1,17 +1,92 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
 body {
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Main heading */
+h1 {
+  margin-top: 40px;
+  font-size: 3rem;
   text-align: center;
-  margin: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
-#gameCanvas {
-  border: 2px solid #333;
-  background: #f4f4f4;
-  margin-top: 20px;
+/* Auth section container */
+#auth-section {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
 }
 
-select, button, input {
-  margin: 10px;
-  padding: 5px 10px;
-  font-size: 16px;
+/* Input fields */
+input[type="email"],
+input[type="password"] {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Placeholder styling */
+input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6b6b;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ff4757;
+  transform: translateY(-2px);
+}
+
+/* Small spacing between inputs and buttons */
+#auth-section br {
+  display: none; /* We'll handle spacing via flex gap */
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  #auth-section {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
 }
